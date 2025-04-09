@@ -53,9 +53,9 @@ function App() {
         else scrollToPage(page - 1);
       }
     };
-
-    container.addEventListener("touchstart", onTouchStart);
+    container.addEventListener("touchstart", onTouchStart, { passive: true });
     container.addEventListener("touchend", onTouchEnd);
+
     return () => {
       container.removeEventListener("touchstart", onTouchStart);
       container.removeEventListener("touchend", onTouchEnd);
@@ -81,18 +81,18 @@ function App() {
           <div className="fixed top-1 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-80 p-2 rounded shadow flex gap-3 items-center z-20">
             <button
               onClick={() => scrollToPage(page - 1)}
-              className="px-2 py-1 text-xl font-bold bg-gray-200 rounded hover:bg-gray-300"
+              className="px-2 py-1 text-base md:text-xl sm:text-lg font-bold bg-gray-200 rounded hover:bg-gray-300"
             >
               <GoArrowLeft />
             </button>
 
-            <span className="text-gray-600">
+            <span className="text-gray-600 drop-shadow-sm font-bold">
               {page} / {images.length}
             </span>
 
             <button
               onClick={() => scrollToPage(page + 1)}
-              className="px-2 py-1 text-xl font-bold bg-gray-200 rounded hover:bg-gray-300"
+              className="px-2 py-1 text-base md:text-xl sm:text-lg font-bold bg-gray-200 rounded hover:bg-gray-300"
             >
               <GoArrowRight />
             </button>
