@@ -71,9 +71,7 @@ function App() {
       {images.map((src, idx) => (
         <div
           key={idx}
-          className={`w-full h-screen snap-start flex justify-center transition-all duration-500 ease-in-out ${
-            idx === 0 && page === 1 ? "items-end" : "items-end"
-          }`}
+          className="w-full h-screen snap-start flex justify-center transition-all duration-500 ease-in-out items-center"
         >
           {idx === 0 && page === 1 && (
             <h1 className="absolute top-[72px] md:top-16 text-white text-2xl sm:text:3xl md:text-4xl lg:text-5xl font-bold z-20 w-full text-center">
@@ -105,10 +103,12 @@ function App() {
             style={{
               maxWidth: "100%",
               maxHeight:
-                page === 1 ? "calc(100vh - 120px)" : "calc(100vh - 60px)",
+                page === 1 ? "calc(100vh - 130px)" : "calc(100vh - 80px)",
               objectFit: "contain",
             }}
-            className="transition-transform duration-300"
+            className={`transition-transform duration-300 ${
+              idx === 0 && page === 1 ? "mt-28" : "mt-5"
+            }`}
           />
         </div>
       ))}
