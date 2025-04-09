@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Bearing Forms</title>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Bearing Forms</title>
 
   <link href="/src/index.css" rel="stylesheet">
-    
-    <script type="text/javascript">
-      var pathSegmentsToKeep = 1;
+  <link rel="icon" type="image/png" href="/logo.png" />
 
-      var l = window.location;
-      l.replace(
-        l.protocol +
-          "//" +
-          l.hostname +
-          (l.port ? ":" + l.port : "") +
-          l.pathname
-            .split("/")
-            .slice(0, 1 + pathSegmentsToKeep)
-            .join("/") +
-          "/?/" +
-          l.pathname
-            .slice(1)
-            .split("/")
-            .slice(pathSegmentsToKeep)
-            .join("/")
-            .replace(/&/g, "~and~") +
-          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
-          l.hash
-      );
-    </script>
-  </head>
-  <body></body>
+  <script type="text/javascript">
+    var pathSegmentsToKeep = 1;
+
+    var l = window.location;
+    l.replace(
+      l.protocol +
+      "//" +
+      l.hostname +
+      (l.port ? ":" + l.port : "") +
+      l.pathname
+        .split("/")
+        .slice(0, 1 + pathSegmentsToKeep)
+        .join("/") +
+      "/?/" +
+      l.pathname
+        .slice(1)
+        .split("/")
+        .slice(pathSegmentsToKeep)
+        .join("/")
+        .replace(/&/g, "~and~") +
+      (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+      l.hash
+    );
+  </script>
+</head>
+
+<body></body>
+
 </html>
