@@ -66,7 +66,7 @@ function App() {
     <div
       ref={containerRef}
       onScroll={handleScroll}
-      className="w-screen h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth relative bg-black"
+      className="w-screen h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth relative bg-white"
     >
       {images.map((src, idx) => (
         <div
@@ -74,11 +74,11 @@ function App() {
           className="w-full h-screen snap-start flex justify-center transition-all duration-500 ease-in-out items-center"
         >
           {idx === 0 && page === 1 && (
-            <h1 className="absolute top-[72px] md:top-16 text-white text-2xl sm:text:3xl md:text-4xl lg:text-5xl font-bold z-20 w-full text-center">
-              ԲԵՐՄԱՆ ԲԱՆԱՁԵՎԵՐ
+            <h1 className="absolute top-[72px] md:top-16 text-black text-2xl sm:text:3xl md:text-4xl lg:text-5xl font-bold z-20 w-full text-center">
+              ԵՌԱՆԿՅՈՒՆԱՉԱՓԱԿԱՆ ԲԱՆԱՁԵՎԵՐ
             </h1>
           )}
-          <div className="fixed top-1 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-80 p-2 rounded shadow flex gap-3 items-center z-20">
+          <div className="fixed top-1 left-1/2 transform -translate-x-1/2 bg-gray-800 bg-opacity-80 p-2 rounded shadow flex gap-3 items-center z-20">
             <button
               onClick={() => scrollToPage(page - 1)}
               className="px-2 py-1 text-base md:text-xl sm:text-lg font-bold bg-gray-200 rounded hover:bg-gray-300"
