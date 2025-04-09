@@ -78,21 +78,21 @@ function App() {
               ԵՌԱՆԿՅՈՒՆԱՉԱՓԱԿԱՆ ԲԱՆԱՁԵՎԵՐ
             </h1>
           )}
-          <div className="fixed top-1 left-1/2 transform -translate-x-1/2 bg-gray-800 bg-opacity-80 p-2 rounded shadow flex gap-3 items-center z-20">
+          <div className="fixed top-1 left-1/2 transform -translate-x-1/2 bg-gray-500 text-black bg-opacity-80 p-2 rounded shadow flex gap-3 items-center z-20">
             <button
               onClick={() => scrollToPage(page - 1)}
-              className="px-2 py-1 text-base md:text-xl sm:text-lg font-bold bg-gray-200 rounded hover:bg-gray-300"
+              className="px-2 py-1 text-base md:text-xl sm:text-lg font-bold bg-gray-300 rounded hover:bg-gray-400"
             >
               <GoArrowLeft />
             </button>
 
-            <span className="text-gray-600 drop-shadow-sm font-bold">
+            <span className="text-gray-100 drop-shadow-sm font-bold">
               {page} / {images.length}
             </span>
 
             <button
               onClick={() => scrollToPage(page + 1)}
-              className="px-2 py-1 text-base md:text-xl sm:text-lg font-bold bg-gray-200 rounded hover:bg-gray-300"
+              className="px-2 py-1 text-base md:text-xl sm:text-lg font-bold bg-gray-300 rounded hover:bg-gray-400"
             >
               <GoArrowRight />
             </button>
