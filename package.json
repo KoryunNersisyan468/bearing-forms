@@ -1,9 +1,9 @@
 {
   "name": "matem-naxagcayin",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "homepage": "https://koryunnersisyan468.github.io/developing-game",
+  "homepage": "https://koryunnersisyan468.github.io/bearing-forms",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

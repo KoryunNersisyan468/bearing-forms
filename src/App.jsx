@@ -107,7 +107,7 @@ function App() {
               objectFit: "contain",
             }}
             className={`transition-transform duration-300 ${
-              idx === 0 && page === 1 ? "mt-28" : "mt-5"
+              idx === 0 && page === 1 ? "mt-24" : "mt-5"
             }`}
           />
         </div>
